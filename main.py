@@ -23,7 +23,6 @@ class ResponseData(BaseModel):
     sum_of_numbers: str
     concatenated_reversed_alphabets: str
 
-
 @app.post("/bfhl", response_model=ResponseData)
 async def process_data(request: RequestData):
     try:
